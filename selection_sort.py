@@ -7,5 +7,12 @@ def selection_sort(arr):
         arr[i], arr[min_index] = arr[min_index], arr[i]
         print(f"selection sort: {arr}")
 
+def selection_sort_excercise(arr):
+    for outer in range(len(arr) - 1):
+        print(f"selection sort: {arr}")
+        for inner in range(len(arr) - 1):
+            if arr[inner] > arr[inner + 1]:
+                arr[inner], arr[inner + 1] = arr[inner + 1], arr[inner]
+
 l = [6, 8, 1, 4, 10, 7, 8, 9, 3, 2, 5]
-selection_sort(l)
+selection_sort_excercise(l)
